@@ -1,0 +1,22 @@
+In file included from ../vector_tests/clear().cpp:1:
+In file included from ../vector_tests/../system/system_methods.ipp:2:
+In file included from ../vector_tests/../system/lib.hpp:30:
+../vector_tests/../system/Alloc.hpp:55:27: warning: variadic templates are a C++11 extension [-Wc++11-extensions]
+template <class _Up, class... _Args>
+                          ^
+../vector_tests/../system/Alloc.hpp:58:34: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+        construct(_Up* __p, _Args&&... __args)
+                                 ^
+../vector_tests/../system/Alloc.hpp:164:27: warning: variadic templates are a C++11 extension [-Wc++11-extensions]
+template <class _Up, class... _Args>
+                          ^
+../vector_tests/../system/Alloc.hpp:167:34: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+        construct(_Up* __p, _Args&&... __args)
+                                 ^
+4 warnings generated.
+ndefined symbols for architecture arm64:
+  "ft::vector<int, std::__1::allocator<int> >::swap(ft::vector<int, std::__1::allocator<int> >&)", referenced from:
+      std::__1::vector<int, std::__1::allocator<int> > swap_test<int>(ft::vector<int, std::__1::allocator<int> >) in swap()-19ac88.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+it code 1 (use -v to see invocation)
